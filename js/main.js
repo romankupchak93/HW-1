@@ -1,10 +1,10 @@
-// 1. Запитайте у юзера скільки йому років: «Привіт мені - “” років!». //
+// 1. Запитайте у юзера скільки йому років: «Привіт мені - “” років!».
 function UserAge() {
     let UserAge = document.getElementById("UserAge").value;
     document.getElementById("AnswerTask1").style.display = "";
     document.getElementById("AnswerUserAge").innerHTML = 'Привіт, мені - ' + UserAge + ' років.';
 }
-// 2. Запитайтесь якого року народження юзер, теперішній рік візьмемо за константу. Виведемо скільки йому років. //
+// 2. Запитайтесь якого року народження юзер, теперішній рік візьмемо за константу. Виведемо скільки йому років.
 function YearUserAge() {
     let getDate = new Date()
     const TODAY_YEAR = getDate.getFullYear()
@@ -36,16 +36,16 @@ function distance() {
     document.getElementById("AnswerTask5").style.display = "";
     document.getElementById("distance").innerHTML = 'Відстань яку потрібно проїхати = ' + (AverageSpeed * TimeToEndWay).toFixed(1) + 'км';
 }
-// 6. Реалізуємо конвертер кілометрів в милі і навпаки =) 
+// 6. Реалізуємо конвертер кілометрів в милі і навпаки =)
 function MilesResult() {
     const CONSTANT_VALUE = 0.62137;
     let km = parseFloat(document.getElementById("kilometers").value);
-    document.getElementById("MilesResult").value = (km * CONSTANT_VALUE).toFixed(3);
+    document.getElementById("MilesResult").value = (km * CONSTANT_VALUE).toFixed(2);
 }
 function KilometersResult() {
     const CONSTANT_VALUE = 0.62137;
     let mi = parseFloat(document.getElementById("miles").value);
-    document.getElementById("KilometersResult").value = (mi / CONSTANT_VALUE).toFixed(3);
+    document.getElementById("KilometersResult").value = (mi / CONSTANT_VALUE).toFixed(2);
 }
 // 7. Юзер вводить скільки коштів на його картці та ціну одного літра бензину. Виводимо скільки бензину він може купити та скільки грошей у нього залишиться.
 function CardMoney() {
